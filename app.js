@@ -1,27 +1,42 @@
-let button = document.querySelector('#btn')
-let numeroSorteado = document.querySelector('#resultado')
-let jogo = []
+let numerosSorteados = document.querySelector('#resultado')
+let button = document.querySelector("button");
 
-function clear() {
-  numeroSorteado.innerHTML = ''
+function sorteia() {
+
+  return Math.round(Math.random() * 59) + 1;
+
 }
 
+function sorteiaNumeros() {
 
-function createNumber() {
-  for (let i = 0; i < 6; i++) {
-    let numeroSorteado = Math.floor(Math.random() * 5 + 1);
+  let megaSena = [];
+  let numero = 1;
+  let quantidadeMaximaDeNumeros = 6;
 
-    while (jogo.includes(numeroSorteado)) {
-      numeroSorteado = Math.floor(Math.random() * 5 + 1);
+  while (numero <= quantidadeMaximaDeNumeros) {
+
+    let numerosSorteados = sorteia();
+    let achou = false;
+
+    for (posicao = 0; posicao < megaSena.length; posicao++) {
+
+      if (megaSena[posicao] == numerosSorteados) {
+
+        achou = true;
+        break;
+      }
     }
+
+    if (achou == false) {
+
+      megaSena.push(numerosSorteados);
+      numero++;
+    }
+
   }
-  numeroSorteado.innerHTML = Math.floor(80 * Math.random() + 1)
+
+  megaSena.sort(function (a, b) { return a - b });
+  numerosSorteados.innerHTML = megaSena.join(' - ');
 }
 
-
-createNumber()
-clear()
-
-button.addEventListener('click', createNumber)
-
-
+button.addEventListener('click', sorteiaNumeros)
