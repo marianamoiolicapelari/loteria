@@ -3,7 +3,7 @@ let button = document.querySelector("button");
 
 function sorteia() {
 
-  return Math.round(Math.random() * 59) + 1;
+  return Math.round(Math.random() * 79) + 1;
 
 }
 
@@ -11,7 +11,7 @@ function sorteiaNumeros() {
 
   let megaSena = [];
   let numero = 1;
-  let quantidadeMaximaDeNumeros = 6;
+  let quantidadeMaximaDeNumeros = 5;
 
   while (numero <= quantidadeMaximaDeNumeros) {
 
