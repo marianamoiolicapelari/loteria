@@ -10,6 +10,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   width: 100%;
 }
 
@@ -46,7 +47,7 @@
 @media (max-width: 600px) and (orientation: portrait) {
   
   #resultado {
-    padding: 5rem 2rem;
+    padding: 5rem;
     font-size: 1rem;
     font-weight: 600;
   }
