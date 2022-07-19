@@ -7,7 +7,7 @@ os números sorteados e ainda verifica se não são repetidos,  para depois colo
 
 ## 🎨 Layout
 
-![image]()
+![image](https://github.com/marianamoiolicapelari/loteria/blob/main/assets/Layoult%20loteria.png)
 
 ## 🛠 Tecnologias
 
