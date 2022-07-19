@@ -19,11 +19,8 @@
 }
 
 #resultado {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 8rem;
-  font-size: 3rem;
+  padding: 6rem;
+  font-size: 2.5rem;
   font-weight: 600;
   color: #FFF;
 }
