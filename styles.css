@@ -47,16 +47,18 @@
 @media (max-width: 600px) and (orientation: portrait) {
   
   #resultado {
-    padding: 5rem;
+    padding: 4rem;
     font-size: 1rem;
     font-weight: 600;
+    text-align: center;
   }
 
   #button {
-    width: 45%;
+    width: 50%;
     height: 60px;
     border-radius: 20px;
     font-size: 1rem;
+    margin-top: 2rem;
   } 
 
 }
