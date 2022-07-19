@@ -1,42 +1,42 @@
-let numerosSorteados = document.querySelector('#resultado')
+let numbersDrawn = document.querySelector('#resultado')
 let button = document.querySelector("button");
 
-function sorteia() {
+function draw() {
 
   return Math.round(Math.random() * 79) + 1;
 
 }
 
-function sorteiaNumeros() {
+function drawNumbers() {
 
-  let megaSena = [];
-  let numero = 1;
-  let quantidadeMaximaDeNumeros = 5;
+  let quina = [];
+  let number = 1;
+  let maximumAmountOfNumbers = 5;
 
-  while (numero <= quantidadeMaximaDeNumeros) {
+  while (number <= maximumAmountOfNumbers) {
 
-    let numerosSorteados = sorteia();
-    let achou = false;
+    let numbersDrawn = draw();
+    let found = false;
 
-    for (posicao = 0; posicao < megaSena.length; posicao++) {
+    for (position = 0; position < quina.length; position++) {
 
-      if (megaSena[posicao] == numerosSorteados) {
+      if (quina[position] == numbersDrawn) {
 
-        achou = true;
+        found = true;
         break;
       }
     }
 
-    if (achou == false) {
+    if (found == false) {
 
-      megaSena.push(numerosSorteados);
-      numero++;
+      quina.push(numbersDrawn);
+      number++;
     }
 
   }
 
-  megaSena.sort(function (a, b) { return a - b });
-  numerosSorteados.innerHTML = megaSena.join(' - ');
+  quina.sort(function (a, b) { return a - b });
+  numbersDrawn.innerHTML = quina.join(' - ');
 }
 
-button.addEventListener('click', sorteiaNumeros)
+button.addEventListener('click', drawNumbers)
