@@ -46,6 +46,11 @@
 
 @media (max-width: 600px) and (orientation: portrait) {
   
+  .img-quina {
+    width: 70%;
+    margin-bottom: 3rem;
+  }
+
   #resultado {
     padding: 4rem;
     font-size: 1rem;
@@ -58,7 +63,7 @@
     height: 60px;
     border-radius: 20px;
     font-size: 1rem;
-    margin-top: 2rem;
+    margin-top: 3rem;
   } 
 
 }
